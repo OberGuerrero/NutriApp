@@ -78,10 +78,10 @@ public class Registro extends AppCompatActivity {
                 captura();
             }
         });
-        NutriAPI apiService = (NutriAPI) RetrofitNutriApp.getRetrofitInstance().create(NutriAPI.class);
-        Call<Respuesta> call = apiService.obtenerDatos(id);
+       GitHubService apiService = (GitHubService) RetrofitNutriApp.getRetrofitInstance().create(GitHubService.class);
+        Call<Respuesta> call = apiService.listRepos(String.valueOf(id));
 
-        call = apiService.obtenerDatos(id);
+        call = apiService.listRepos(String.valueOf(id));
 
         call.enqueue(new Callback<Respuesta>() {
             @Override
