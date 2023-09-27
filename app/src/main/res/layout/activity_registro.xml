@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvTitRegistro"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/logo_nutriapp" />
+
+    </GridLayout>
+
+    <Space
+        android:id="@+id/spaceHeaderContent"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spaceHeaderContent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivPerfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/default_profile_image"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto de perfil" />
+
+        <Button
+            android:id="@+id/btnCaptura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomar Foto" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvNombreRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvNombreRegistro" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/tvTelefonoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvTelefonoRegistro" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCorreoRegistro" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/tvPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvPass" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tvPassChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvPassChk" />
+
+        <EditText
+            android:id="@+id/etPassChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/spaceContent"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@id/contentLayout"
+        android:layout_gravity="center"
+        />
+
+    <GridLayout
+        android:id="@+id/ButtonSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spaceContent"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/aqua"
+            android:shadowColor="@color/black"
+            android:text="@string/btnRegistrar"
+            android:textColor="@color/black"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/aqua"
+            android:shadowColor="@color/black"
+            android:text="@string/btnVolver"
+            android:textColor="@color/black"
+            android:layout_column="1"/>
+
+    </GridLayout>
+</RelativeLayout>
+</ScrollView>

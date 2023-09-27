@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NutriApp</string>
+    <string name="tvTitulo1">Bienvenidos a</string>
+    <string name="tvUsuario">Usuario: </string>
+    <string name="tvPass">Contraseña: </string>
+    <string name="chbxRemember">Recordar Contraseña</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="tvRegistro">Para los nuevos visitantes, pueden hacer registro </string>
+    <string name="tlRegistro">Ingresando en este enlace</string>
+    <string name="tvTitRegistro">Registro de Usuarios</string>
+    <string name="tvNombreRegistro">Nombres: </string>
+    <string name="tvTelefonoRegistro">Teléfono: </string>
+    <string name="tvCorreoRegistro">E-mail: </string>
+    <string name="tvPassChk">Confirmar Contraseña: </string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnVolver">Volver</string>
+</resources>
